@@ -1,0 +1,55 @@
+body{
+    background-color: blueviolet;
+}
+
+.container{
+    width: 500px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.952);
+    padding: 10px;
+    margin: 20px;
+
+    display: -webkit-flex; /*nos permite ejecutar el flexbox en safari y chrome*/
+    display: -ms-flexbox; /*explorer*/
+    display: flex; /*SERA UNA CAJA EN LINEA FLEXIBLE, quedara todo alineado*/
+
+
+
+    flex-wrap: wrap;   /*alinea todas las cajas para que no se salgan de su contenedor y los ordena en mas de una fila*/
+
+   /* align-items: center;
+      justify-content: center;*/
+
+    /* flex-direction: row | column | row-reverse | column-reverse ; */
+    /* flex-wrap: no-wrap | wrap | wrap-reverse; */
+    /* justify-content: flex-end | flex-start | center | space-around | space-between ;*/
+    /* align-items: flex-start | flex-end | center | stretch: 100% del contenedor | baseline; */
+    /* align-content: flex-start | flex-end | center | stretch | space-between | space-around ;*/
+    /* justify-content: center; */
+    /* align-items: center GRUPOS DE ELEMENTOS DE UNA SOLA FILA */  
+    /* align-content: space-between; /* GRUPOS DE ELEMENTOS DE MAS FILAS - wrap */
+}
+
+.caja{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    margin: 10px;
+}
+
+.caja1{
+order:1;
+}
+
+.caja2{
+order:2;
+}
+
+.caja3{
+order:3;
+}
+
+.caja4{
+order: 4;
+}
